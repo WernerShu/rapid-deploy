@@ -1,0 +1,14 @@
+{
+  "name": "rapid-deploy-app",
+  "version": "1.0.0",
+  "description": "快速部署app",
+  "main": "main.js",
+  "author": "舒",
+  "license": "MIT",
+    "scripts": {
+      "start": "electron ."
+    },
+    "devDependencies": {
+    "electron": "^20.1.0"
+  }
+}
