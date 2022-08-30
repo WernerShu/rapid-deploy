@@ -1,35 +1,49 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": true,
-    "esModuleInterop": false,
-    "allowSyntheticDefaultImports": true,
-    "strict": true,
-    "forceConsistentCasingInFileNames": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "baseUrl": "./",
-    "types": [
-      "node"
-    ],
-    "paths": {
-      "@/*": ["src/*"],
-      "#/*":["types/*"],
+    "compilerOptions": {
+        "target": "ESNext",
+        "useDefineForClassFields": true,
+        "lib": [
+            "DOM",
+            "DOM.Iterable",
+            "ESNext"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": false,
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+        "forceConsistentCasingInFileNames": true,
+        "module": "ESNext",
+        "moduleResolution": "Node",
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "noEmit": true,
+        "jsx": "react-jsx",
+        "baseUrl": "./",
+        "types": [
+            "node"
+        ],
+        "paths": {
+            "@/*": [
+                "src/*"
+            ],
+            "#/*": [
+                "types/*"
+            ],
+        },
     },
-  },
-  "exclude": [
-    "node_modules",
-    "dist",
-    "**/*.js",
-    "**/*.spec.ts"
-  ],
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.tsx", "src/**/*.vue", "types/**/*.d.ts","types/**/*.ts",],
-  "references": [{ "path": "./tsconfig.node.json" }]
+    "exclude": [
+        "node_modules",
+        "dist",
+        "**/*.js",
+        "**/*.spec.ts"
+    ],
+    "include": [
+        "src",
+    ],
+    "references": [
+        {
+            "path": "./tsconfig.node.json"
+        }
+    ]
 }
